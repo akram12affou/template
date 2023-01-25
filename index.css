@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background: #23262b;
+    color:white;
+    width: 100vmin;
+    height:1000px;
+    overflow-X: hidden;
+}
+.up{
+    border: 1px solid black;
+    padding:10px;
+    position: fixed;
+    bottom:0;
+    right:0;
+    margin: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all ease .1s;
+    transform: translateX(70px);
+    
+}
+.up.show{
+    transform: translateX(0px);
+}
+
+header{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    margin-right: 20vw;
+    display: flex;
+    align-items: center;
+}
+header .menu{
+   width: 25px;
+   height: 25px;
+}
+header .logoimg{
+    width: 150px;
+    height: 50px;
+}
+header nav{
+    display: flex;
+}
+main{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns:10% 40% 40% 10%;
+}
+.ayeeh{
+    
+    position: relative;
+    cursor: pointer;
+   width: 45px;
+   border-radius: 15px;
+   background: rgb(51, 255, 0);
+   height: 24px;
+   border: 1px solid rgb(255, 255, 255);
+}
+.ayeeh div{
+    position: absolute;
+    top:0%;
+    left: 50%;
+    width: 19px;
+   border-radius: 50%;
+   background: rgb(255, 255, 255);
+   height: 19px;
+   border: 1px solid black;
+}
+
+.img-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lamp{
+    width: 20vmin;
+    top:0;
+    z-index: 1;
+    right:59vmin;
+}
+
+.light{
+    width: 60vmin;
+    top:38vmin;
+    right:40vmin;
+    transition: all ease .1s;
+}
+.light.tfa{
+    opacity: 0;
+}
+.text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
